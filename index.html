@@ -1,2 +1,13 @@
 <h1>Välkommen till Kläder efter väder!</h1>
 <p>Web app under construction ...</p>
+
+<script>
+  if (navigator.geolocation) {
+    navigatior.geolocation.getCurrentPosition(function(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    });
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+</script>
